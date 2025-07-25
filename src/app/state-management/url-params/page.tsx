@@ -22,6 +22,11 @@ import {
     useSearchParams, // getting params
     useRouter // setting params
 } from "next/navigation";
+// Reading search parameters through useSearchParams() 
+// without a Suspense boundary will opt the entire page
+// into client-side rendering.
+import { Suspense } from 'react'
+
 import RNHeader from "@/components/notebook/typography/Header"
 /* 
 there are alternative solutions as well:
@@ -29,12 +34,21 @@ there are alternative solutions as well:
 - react router: https://ui.dev/react-router-url-parameters
 */
 
+export default function URLParamsPage() {
+    return (
+        // we could have a loading skeleton as the `fallback` too
+        <Suspense>
+            <URLParamsPageMain />
+        </Suspense>
+    )
+}
+
 type KeyValuePairType = {
     key: string,
     value: string
 }
 
-export default function URLParamsPage() {
+function URLParamsPageMain() {
     // states for user input
     const [kvInputSet, setKVInputSet] = useState<KeyValuePairType>({ key: "", value: "" })
     const [kvInputRead, setKVInputRead] = useState<KeyValuePairType>({ key: "", value: "" })

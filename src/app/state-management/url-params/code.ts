@@ -6,6 +6,11 @@ import {
     useSearchParams,    // getting params
     useRouter           // setting params
 } from "next/navigation";
+ 
+// Reading search parameters through useSearchParams() 
+// without a Suspense boundary will opt the entire page
+// into client-side rendering.
+import { Suspense } from 'react'
 `,
     "setting a url param": `
 const router = useRouter();

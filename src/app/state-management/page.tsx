@@ -36,14 +36,14 @@ export default function URLParamsPage() {
                     <CatalogueCard
                         name="useContext"
                         description="Native way of handling global and co-located states."
-                        url="state-management/use-context"
+                        url="use-context"
                     />
                 }
                 right={
                     <CatalogueCard
                         name="URL Params"
                         description="Setting and extracting states from URL"
-                        url="state-management/url-params"
+                        url="url-params"
                     />
                 }
             />

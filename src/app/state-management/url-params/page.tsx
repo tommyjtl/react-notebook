@@ -108,8 +108,8 @@ function URLParamsPageMain() {
     return (
         <>
             <RNContentBody title="URL Params" structure={[
-                { name: "Home", url: "../../" },
-                { name: "State Management", url: "../" },
+                { name: "Home", url: "/" },
+                { name: "State Management", url: "/state-management" },
                 { name: "URL Params" }
             ]} >
                 <SideBySideRow

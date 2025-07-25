@@ -8,7 +8,7 @@ export default function URLParamsPage() {
         <RNContentBody
             title="State Management"
             structure={[
-                { name: "Home", url: "../" },
+                { name: "Home", url: "/" },
                 { name: "State Management" },
             ]}
         >

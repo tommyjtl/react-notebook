@@ -188,8 +188,8 @@ export default function UseContextPage() {
 
     return (
         <RNContentBody title="useContext" structure={[
-            { name: "Home", url: "../../" },
-            { name: "State Management", url: "../" },
+            { name: "Home", url: "/" },
+            { name: "State Management", url: "/state-management" },
             { name: "useContext" }
         ]} >
 

@@ -17,7 +17,7 @@ export default function URLParamsPage() {
                     <CatalogueCard
                         name="useState"
                         description="Native way of handling local state within a component."
-                        url="state-management/use-state"
+                        // url="state-management/use-state"
                         disabled={true}
                     />
                 }
@@ -25,7 +25,7 @@ export default function URLParamsPage() {
                     <CatalogueCard
                         name="useReducer"
                         description="Native way of wrapping up multiple states with a reducer function."
-                        url="state-management/use-reducer"
+                        // url="state-management/use-reducer"
                         disabled={true}
                     />
                 }
@@ -36,14 +36,14 @@ export default function URLParamsPage() {
                     <CatalogueCard
                         name="useContext"
                         description="Native way of handling global and co-located states."
-                        url="use-context"
+                        url="/state-management/use-context"
                     />
                 }
                 right={
                     <CatalogueCard
                         name="URL Params"
                         description="Setting and extracting states from URL"
-                        url="url-params"
+                        url="/state-management/url-params"
                     />
                 }
             />
@@ -53,7 +53,7 @@ export default function URLParamsPage() {
                     <CatalogueCard
                         name="Web Storage API"
                         description="Using browser for managing states via local & session storage"
-                        url="state-management/use-context"
+                        // url="state-management/web-storage"
                         disabled={true}
                     />
                 }

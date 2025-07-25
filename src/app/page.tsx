@@ -54,7 +54,7 @@ import React from "react";
           <CatalogueCard
             name="State Management"
             description="Native ways of managing states."
-            url="state-management"
+            url="/state-management"
           />
         }
         right={

@@ -131,7 +131,11 @@ export default function UseContextPage() {
                                     Reset to Initial State
                                 </Button>
                                 <Button
-                                    variant="outline"
+                                    className={
+                                        enableContext ?
+                                            `bg-red-600 hover:bg-red-500` :
+                                            `bg-blue-600 hover:bg-blue-500`
+                                    }
                                     size="sm"
                                     onClick={() => {
                                         setEnableContext((prev) => {

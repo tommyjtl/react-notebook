@@ -87,7 +87,15 @@ export default function RNContentBody({
                 </CardContent>
                 <CardFooter className="border-t-1 pt-5">
                     <p className="text-sm text-gray-400">
-                        <RNLink name="React Notebook" url="/" in_new_tab={false} />, 2025.
+                        <RNLink
+                            name="React Notebook"
+                            url="/"
+                            in_new_tab={false}
+                        /> from <RNLink
+                            name="Source"
+                            url="https://github.com/tommyjtl/react-notebook"
+                            in_new_tab={true}
+                        />
                     </p>
                 </CardFooter>
             </Card>
